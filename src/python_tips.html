@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Abbreviations quiz game</title>
+
+		<meta name="description" content="Crunch the syntax-heavy jungle of tech terms">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<!-- <link rel="stylesheet" href="dist/theme/sky.css"> -->
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h3>One virtual environment per project</h3>
+					</section>
+					<section>Isolation. You don't want to mess up the system Python</section>
+					<section>Different projects have different dependency versions</section>
+				</section>
+				<section>
+					<section>
+						<h3>Structure your code and projects</h3>
+					</section>
+					<section>Package and module structure gives an overview about the project</section>
+					<section>Modular design == better re-usability</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Utilize the capabilities of your editor</h3>
+					</section>
+					<section>Efficient and fluent development</section>
+					<section>There's plenty of tools to make your daily programming easier, why would you not use them</section>
+				</section>
+
+				<section>
+					<h3>5 Tips To Achieve Low Coupling In Your Python Code</h3>
+					<a href="https://www.youtube.com/watch?v=qR4-PBLUZNw">source YT video</a>
+					<ol>
+						<li>Avoid deep inheritance relationships</li>
+						<li>Separate creating resources from using them</li>
+						<li>Introduce abstractions</li>
+						<li>Avoid inappropriate intimacy</li>
+						<li>Introduce an intermediate data structure</li>
+					</ol>
+				</section>
+
+				<section>
+					<section>
+						<h3>Testing</h3>
+					</section>
+					<section>If it can break, it should be tested. This includes models, views, forms, templates, validators, and so forth</section>
+					<section>Each test should generally only test one function</section>
+					<section>Keep it simple. You do not want to have to write tests on top of other tests</section>
+					<section>Run tests whenever code is PULLed or PUSHed from the repo and in the staging environment before PUSHing to production</section>
+					<section>
+						<h4>When upgrading to a newer version of library or web framework</h4>
+
+						<ul>
+							<li>upgrade locally</li>
+							<li>run your test suite</li>
+							<li>fix bugs</li>
+							<li>PUSH to the repo and staging, and then</li>
+							<li>test again in staging before shipping the code</li>
+						</ul>
+
+					</section>
+				</section>
+
+
+				<!-- Slides are separated by three dashes (the default) -->
+				<section data-markdown>
+					<script type="text/template">
+						## definition 2
+						...
+					</script>
+				</section>
+
+				<!-- Slides are separated by regexp matching newline + three dashes + newline, vertical slides identical but two dashes -->
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+					<script type="text/template">
+						## SOLID
+
+						--
+
+						SRP
+
+						--
+
+						OCP
+
+						--
+
+						LSP
+
+						--
+
+						ISP
+
+						--
+
+						DIP
+
+						---
+
+						## TCP/IP
+						Transmission Control Protocol/Internet Protocol
+
+						---
+
+						## OSI
+						Open Systems Interconnection
+					</script>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs python" data-trim data-line-numbers>
+						import json
+						import yaml
+						from pathlib import Path
+						
+						BASE_DIR = Path(__file__).resolve(strict=True).parent
+					</code></pre>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<!-- <script src="plugin/notes/notes.js"></script> -->
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealSearch ]
+			});
+		</script>
+	</body>
+</html>

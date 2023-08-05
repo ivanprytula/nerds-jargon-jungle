@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Abbreviations quiz game</title>
+
+		<meta name="description" content="Crunch the syntax-heavy jungle of tech terms">
+		<meta name="author" content="Ivan Prytula">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>GoF</section>
+					<section>GoF</section>
+				</section>
+				<section>GoF</section>
+
+
+				<!-- Slides are separated by three dashes (the default) -->
+				<section data-markdown>
+					<script type="text/template">
+						## definition 1
+						---
+						## definition 2
+					</script>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs python" data-trim data-line-numbers>
+						import json
+						import yaml
+						from pathlib import Path
+						
+						BASE_DIR = Path(__file__).resolve(strict=True).parent
+					</code></pre>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<!-- <script src="plugin/notes/notes.js"></script> -->
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealSearch ]
+			});
+		</script>
+	</body>
+</html>

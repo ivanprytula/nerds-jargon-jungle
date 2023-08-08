@@ -4,9 +4,9 @@
 
 `"nerds-jargon-jungle"`
 
-About programming and computer Abbreviations, Acronyms, Initialisms, Contractions, Jargon, and Other Shorthands
+Collections for learning and memorizing of programming (mostly Python related), computer and terms from other areas.
 
 [WIP] Currently there are two pages "under construction":
 
 - <https://ivanprytula.github.io/nerds-jargon-jungle/>
-- <https://ivanprytula.github.io/nerds-jargon-jungle/python_tips.html>
+- <https://ivanprytula.github.io/<need another repo>/python_tips.html>
